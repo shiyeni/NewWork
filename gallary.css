@@ -1,0 +1,209 @@
+body {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    padding: 0 15%;
+    margin-top: 100px;
+  }
+  .header_menu{
+    height: 60px;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+  .main-menu-list-first {
+    display: flex;
+    justify-content: space-around; 
+  }
+    .main-menu-list-first a {
+      list-style-type: none;
+      text-decoration: none;
+      color: #000034; 
+    }
+  
+  ul li {
+    display: inline;
+    text-decoration: none;
+    margin-right: 20px;
+    color: #000;
+    font-weight: bold;
+  }
+.container-container {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding: 20px 0; 
+}
+  
+  .container-crash {
+    height: auto;
+    width: 30%; 
+}
+  
+  .container-two {
+    background-color: #FFD300;
+    height: 200px; 
+    filter: brightness(60%); 
+}
+.photo-top{
+    height: 200px;
+    width: 283px;  
+}
+  
+  .container-crash-1 {
+    background-color: #FFD300;
+    height: 200px;
+    margin-top: 20px; }
+    .container-crash-2 {
+      background-color: purple;
+      height: 200px;
+      margin-top: 20px; }
+    .container-crash-1 .container-crash-2 .boot {
+      width: 100px;
+      height: 100px;
+      padding: 50px; }
+  
+  .flip-image {
+    background-color: transparent;
+    width: 67%;
+    height: 420px;
+    perspective: 1000px; }
+  
+  .flip-image-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  
+  /*.flip-image:hover .flip-image-inner {
+    transform: rotateY(180deg); }*/
+  
+  .flip-image-front, .flip-container-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; }
+  
+  .flip-image-front {
+    background-color: #fff;
+    color: black; 
+}
+  
+  .back-path {
+    padding-top: 100px; }
+  
+  .button-back {
+    background: #FFD300;
+    text-decoration: none;
+    padding: 15px;
+    letter-spacing: 5px;
+    border-radius: 30px;
+    color: #000034;
+    font-weight: bold;
+}
+  
+  /*.flip-container-back {
+    transform: rotateY(180deg); }*/
+  
+  .span-heading {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 2;
+    padding: 30px; 
+}
+  
+  .span-quote {
+    display: block;
+    letter-spacing: 4px;
+    font-size: 17px; }
+  
+ /* .flip-container .img, .flip-container .container-bigger {
+    width: 100%;
+    height: 420px; }*/
+  
+  .container-last {
+    display: flex;
+    justify-content: space-between; }
+  
+  .last-least {
+    background-image: url("codespace.jpeg");
+    background-position: center;
+    width: 60%;
+    height: 400px;
+}
+.final {
+  width: 100%;
+}
+  .last-least-last {
+    width: 37%;
+    background-color: red; }
+
+    .image {
+        width: 100%;
+        height: 360px; }  
+
+        /*RESPONSIVENESS*/
+
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 16px;
+                font-family: "Lato", sans-serif;
+                padding: 20px;
+                margin: 0 10px;
+            }
+            .container-container {
+                display: block;
+                justify-content: space-between;
+                width: auto;
+                padding: 20px 0; 
+            }
+            .container-crash {
+                height: auto;
+                width: 100%; 
+            }
+            .photo-top{
+                height: 200px;
+                width: 100%;  
+            }
+            .flip-image-inner {
+                margin-top: 20px;
+                position: relative;
+                width: 474px;
+                height: 400px;
+                text-align: center;
+                transition: transform 0.6s;
+                transform-style: preserve-3d;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+            .flip-image-front {
+                position: absolute;
+                width: 100%;
+                height: 400px;
+                backface-visibility: hidden; 
+                
+            }
+            .last-least {
+                background-position: top;
+                width: 60%;
+                height: 400px;
+                text-align: center;
+                filter: brightness(50%); 
+            }
+            .final {
+              width: 100%;
+            }
+          }
+          @media only screen and (max-width: 360px) {
+            .flip-image-inner {
+                margin-top: 20px;
+                position: relative;
+                width: 300px;
+                height: 400px;
+                text-align: center;
+                transition: transform 0.6s;
+                transform-style: preserve-3d;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+          }

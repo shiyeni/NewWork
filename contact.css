@@ -1,0 +1,144 @@
+html, body{
+padding: 0;
+margin: 0;
+}
+.top{
+    height: 60px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+}
+.main_main{
+    padding: 40px 7%;
+    text-align: center;
+    margin-top: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+}
+  .heading_one{
+      text-decoration: underline;
+  }
+input{
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    border-bottom: 1px solid grey;
+}
+input::placeholder{
+    text-align: center;
+}
+.button_submit{
+    margin-top: 50px;
+    width: 290px;
+    padding: 10px;
+    letter-spacing: 2px;
+    background-color: #FFD300;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 50px; 
+}
+.map{
+    filter: opacity(0.9);
+     margin: 0 15%;
+     margin-top: 40px;
+     filter: brightness(40%)
+}
+.icon_defination{
+    height: 100px;
+}
+.comment{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+
+}
+.icons_container{
+  margin: 0 15%;
+  padding: 10px;
+  height: 490px;
+}
+/* icons*/
+.icon_defination{
+    display: flex;
+    padding: 20px;
+}
+.user_icon{
+    width: 130px;
+    height: 130px; 
+}
+.user_defination{
+    width: 70%;
+    height: 100px;
+    border: unset;
+    font-size: 17px;
+}
+.user_defination span{
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 4px;
+font-size: 20px;
+}
+.icon_defination i {
+    font-size:80px;
+    color:#000034"
+}
+@media only screen and (max-width: 600px) {
+    .icon_defination{
+        display: flex;
+        padding: 0;
+    } 
+    .user_icon{
+        width: 40%;
+        height: 130px; 
+    }
+    .user_defination{
+        width: 60%;
+        height: 150px;
+        font-size: 14px;
+    }
+    .heading_one{
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0;
+    }
+    .user_defination span{
+        display: none;
+        }
+        .icon_defination i {
+            font-size: 40px;
+            padding-top: 30px;
+        }
+        .main_main{
+            padding: 20px 7%;
+            text-align: center;
+            margin: 0;
+          }
+          .icons_container{
+            margin: 0 15%;
+            padding: 10px;
+            height: 300px;
+          }
+          input{
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid gray;
+        }
+        .comment{
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            width: 165px;
+            height: 40px;
+        }
+        .button_submit{
+            background-color: #FFD300;
+            margin-top: 10px;
+            width: 100px;
+            padding: 10px;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border: none;
+            border-radius: 50px; 
+        }
+}
